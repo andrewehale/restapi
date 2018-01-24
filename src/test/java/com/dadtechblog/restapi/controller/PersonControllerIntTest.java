@@ -67,6 +67,9 @@ public class PersonControllerIntTest {
                 .andExpect(jsonPath("$.id").value(person.getId()))
                 .andExpect(jsonPath("$.firstName").value(person.getFirstName()))
                 .andExpect(jsonPath("$.lastName").value(person.getLastName()));
+
+        personRepository.deleteAll();
+        personRepository.flush();
     }
 
 }
