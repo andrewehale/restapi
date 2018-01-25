@@ -1,7 +1,7 @@
 databaseChangeLog:
   - changeSet:
       id: 1
-      author: marceloverdijk
+      author: andrew
       changes:
         - createTable:
             tableName: person
@@ -23,16 +23,4 @@ databaseChangeLog:
                   type: varchar(255)
                   constraints:
                     nullable: false
-  - changeSet:
-      id: 2
-      author: marceloverdijk
-      changes:
-        - insert:
-            tableName: person
-            columns:
-              - column:
-                  name: first_name
-                  value: Marcel
-              - column:
-                  name: last_name
                   value: Overdijk

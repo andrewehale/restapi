@@ -4,8 +4,11 @@ spring:
   main:
     banner-mode: 'off'
   datasource:
-    url: jdbc:h2:file:./spring-boot-h2-db;DB_CLOSE_ON_EXIT=FALSE
+    url: jdbc:h2:file:./spring-boot-h2-db;DB_CLOSE_ON_EXIT=TRUE
     username: restapi
     password:
     driver-class-name: org.h2.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
 

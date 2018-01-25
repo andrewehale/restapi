@@ -2,9 +2,7 @@ package com.dadtechblog.restapi.controller;
 
 import com.dadtechblog.restapi.domain.Person;
 import com.dadtechblog.restapi.repository.PersonRepository;
-import com.sun.xml.internal.messaging.saaj.util.MimeHeadersUtil;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.net.URI;

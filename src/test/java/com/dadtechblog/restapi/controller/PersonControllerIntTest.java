@@ -61,7 +61,7 @@ public class PersonControllerIntTest {
         personRepository.saveAndFlush(person);
 
 
-        restPersonMockMvc.perform(get("/persons/{id}", person.getId()))
+        restPersonMockMvc.perform(get("/api/persons/{id}", person.getId()))
                 .andExpect(status().isOk())
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON_UTF8_VALUE))
                 .andExpect(jsonPath("$.id").value(person.getId()))
